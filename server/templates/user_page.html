@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <head>
+    <title>User page</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+  </head>
+  <body>
+    <h1>Welcome, {{ username }}!</h1>
+    <h2>Your name from telegram is {{ name }}</h2>
+    <h2>Your nickname from telegram is {{ nickname }}</h2>
+    <h2>Your profile photo: </h2>
+    <img src="{{photo_path}}"  width="400" height="400" />
+  </body>
+</html>
