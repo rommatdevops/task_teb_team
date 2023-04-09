@@ -4,7 +4,6 @@ services:
     container_name: mysql
     image: mysql:latest
     environment:
-      MYSQL_ROOT_PASSWORD: 'pass'
       MYSQL_USER: 'user'
       MYSQL_PASS: 'pass'
     volumes:
