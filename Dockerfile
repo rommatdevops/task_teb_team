@@ -6,4 +6,4 @@ COPY . .
 
 RUN python -m pip install -r requirements.txt
 
-ENTRYPOINT [ "python", "bot.py" ]
+# ENTRYPOINT [ "python", "bot.py" ]
