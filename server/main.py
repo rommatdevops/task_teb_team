@@ -31,4 +31,4 @@ def user_page(username):
     return render_template('user_page.html', username=username, photo_path=photo, name=name, nickname=nickname)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='172.22.0.3', port=5000)
