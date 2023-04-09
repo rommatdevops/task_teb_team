@@ -27,7 +27,7 @@ def user_page(username):
     result = select_name_nick(username)
     name = result[0][0]
     nickname = result[0][1]
-    photo = f"http://{ config.host }:{ config.port }/static/images/tera_image.jpg"
+    photo = f"http://{ config.host }:{ config.port }/static/images/{ username }_image.jpg"
     return render_template('user_page.html', username=username, photo_path=photo, name=name, nickname=nickname)
 
 if __name__ == '__main__':
