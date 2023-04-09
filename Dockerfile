@@ -6,6 +6,6 @@ COPY . .
 
 RUN python -m pip install -r requirements.txt
 
-WORKDIR /bot
+WORKDIR /bot/bot
 
 ENTRYPOINT [ "python", "bot.py" ]

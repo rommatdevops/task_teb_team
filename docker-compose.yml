@@ -18,3 +18,5 @@ services:
     image: bot
     volumes:
       - /home/ubuntu/task_teb_team:/bot
+    ports:
+      - "5000:5000"
